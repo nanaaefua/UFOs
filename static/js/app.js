@@ -72,15 +72,12 @@ function updateFilters() {
   }
   
   // 2. Attach an event to listen for changes to each filter
-
   d3.selectAll("imput").on("change",updateFilters);
-  
-  
-  // d3.selectAll("#datetime").on("change",updateFilters);
-  // d3.selectAll("#city").on("change",updateFilters);
-  // d3.selectAll("#state").on("change",updateFilters);
-  // d3.selectAll("#country").on("change",updateFilters);
-  // d3.selectAll("#shape").on("change",updateFilters);
+  d3.selectAll("#datetime").on("change",updateFilters);
+  d3.selectAll("#city").on("change",updateFilters);
+  d3.selectAll("#state").on("change",updateFilters);
+  d3.selectAll("#country").on("change",updateFilters);
+  d3.selectAll("#shape").on("change",updateFilters);
   
   
   // Build the table when the page loads
